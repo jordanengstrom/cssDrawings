@@ -1,0 +1,179 @@
+body {
+    background: rgb(255, 235, 178);
+}
+
+.box {
+    /* When the position is set to relative, using display: block; and margin:auto; will automatically center the box horizontally. */
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    /* background: white;
+    border: solid 4px #000000; */
+}
+
+/* When you want to absolutely center things, here is the formula:
+
+left = (100 - width) / 2
+top = (100 - height) / 2
+
+(100 - 67)/2 = top: 16.5%;
+(100-50)/2 = left: 25%; */
+
+.head{
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    width: 50%;
+    height: 67%;
+    background: #b8b6b6;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .head-copy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #b8b6b6;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .ear-left{
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    left: -17%;
+    top: -10%;
+    background: #b8b6b6;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .ear-right{
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    right: -15%;
+    top: -11%;
+    background: #b8b6b6;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .inner-ear{
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: rgb(255, 226, 245);
+  }
+
+.eye-left {
+  position: absolute;
+  background: white;
+  width: 25%;
+  height: 25%;
+  top: 25%;
+  left: 21%;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.eye-right {
+  position: absolute;
+  background: white;
+  width: 25%;
+  height: 25%;
+  top: 25%;
+  right: 21%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.pupil {
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  top: 35%;
+  left: 36%;
+  border-radius: 50%;
+  background: rgb(23, 23, 23);
+}
+
+.nose {
+  position: absolute;
+  background: rgb(78, 77, 76);
+  width: 25%;
+  height: 37.5%;
+  left: 37%;
+  top: 45%;
+  border-radius: 50px;
+  z-index: 5;
+}
+
+.chin {
+  position: absolute;
+  background: rgb(211, 211, 211);
+  width: 45%;
+  height: 36.5%;
+  left: 27%;
+  top: 66%;
+  border-radius: 50% 50%;
+  z-index: 4;
+}
+
+.mouth-left {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  top: 43%;
+  left: 11%;
+  background-color: transparent;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 10px solid gray;
+  border-bottom: 0;
+  transform:rotate(180deg);
+}
+
+.mouth-right {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  top: 43%;
+  left: 45%;
+  background-color: transparent;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 10px solid gray;
+  border-bottom: 0;
+  transform:rotate(180deg);
+}
+
+
+.hair-left {
+  position: absolute;
+  top: -8%;
+  left: 30%;
+  width: 20%;
+  height: 20%;
+  background:  #b8b6b6;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.hair-right{
+  position: absolute;
+  top: -4%;
+  left: 48%;
+  width: 20%;
+  height: 20%;
+  background:  #b8b6b6;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
